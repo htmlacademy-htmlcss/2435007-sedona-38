@@ -2,6 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Гостиницы Седоны</title>
   </head>
   <body>
@@ -36,7 +40,7 @@
           </a>
         </li>
         <li>
-          <button type="submit" class="navigation-button">Хочу сюда</button>
+          <button type="submit" class="secondary-button">Хочу сюда</button>
         </li>
       </ul>
     </nav>
@@ -91,8 +95,8 @@
         <div class="range-slider-line"></div>
       </div>
       <div class="filter-search-item">
-        <input class="catalog-buttom" type="button" value="Применить">
-        <a href="#">Сбросить</a>
+        <button type="submit" class="brand-button">Применить</button>
+        <button type="submit" class="clear-button">Сбросить</button>
       </div>
     </section>
     <section class="catalog">
@@ -121,7 +125,8 @@
             <h3>Amara Resort & Spa</h3>
             <p>Гостиница</p>
             <p>От 4000 ₽</p>
-            <input class="catalog-button" type="button" value="Подробнее">
+            <button type="submit" class="secondary-button">Подробнее</button>
+            <button type="submit" class="brand-button">В избраное</button>
             <input class="favorites-button" type="button" value="В избранное">
             <!--<input class="favorites-button hover" type="button" value="В избранном">-->
             <p class="star-stars-3">
@@ -138,8 +143,8 @@
             <h3>Amara Resort & Spa</h3>
             <p>Гостиница</p>
             <p>От 4000 ₽</p>
-            <input class="catalog-button" type="button" value="Подробнее">
-            <input class="favorites-button" type="button" value="В избранное">
+            <button type="submit" class="secondary-button">Подробнее</button>
+            <button type="submit" class="brand-button">В избраное</button>
             <!--<input class="favorites-button hover" type="button" value="В избранном">-->
             <p class="star-stars-3">
               <span class="visually-hidden">Трехзвездочный отель</span>
@@ -156,7 +161,7 @@
             <p>Гостиница</p>
             <p>От 4000 ₽</p>
             <input class="catalog-button" type="button" value="Подробнее">
-            <input class="favorites-button" type="button" value="В избранное">
+            <button type="submit" class="brand-button">В избраное</button>
             <!--<input class="favorites-button hover" type="button" value="В избранном">-->
             <p class="star-stars-3">
               <span class="visually-hidden">Трехзвездочный отель</span>
@@ -172,8 +177,8 @@
             <h3>Amara Resort & Spa</h3>
             <p>Гостиница</p>
             <p>От 4000 ₽</p>
-            <input class="catalog-button" type="button" value="Подробнее">
-            <input class="favorites-button" type="button" value="В избранное">
+            <button type="submit" class="secondary-button">Подробнее</button>
+            <button type="submit" class="brand-button">В избраное</button>
             <!--<input class="favorites-button hover" type="button" value="В избранном">-->
             <p class="star-stars-3">
               <span class="visually-hidden">Трехзвездочный отель</span>
@@ -197,17 +202,9 @@
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <input type="text" name="e-mail" value="Ваш e-mail">
         </form>
-        <input class="footer-button" type="button" value="Подписаться">
+        <button type="submit" class="brand-button">Подписаться</button>
       </div>
     </section>
-    <div class="footer-text-blok">
-      <p class="main-text-footer">Подпишитесь на рассылку</p>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <input type="text" name="e-mail" value="Ваш e-mail">
-      </form>
-      <input class="footer-button" type="button" value="Подписаться">
-    </div>
   </main>
   <footer class="main-footer">
     <nav class="footer-navigation">
@@ -228,7 +225,7 @@
         </li>
       </ul>
     </nav>
-    <a href="#" class="footer-text">+7 (812) 812-12-12</a>
+    <div class=phone><a href="tel:+78128121212">+7 (812) 812-12-12</a></div>
     <a href="#">
       <img src="images/icons/logo_htmlacademy.svg" alt="Сайт HTML ACADEMY">
     </a>
