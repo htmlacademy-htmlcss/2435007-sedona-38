@@ -2,8 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Седона</title>
-  </head>
+
   <body>
   <header class="main-header">
     <a class="logo" href="index.html" aria-current="page" width="100px">
@@ -38,7 +44,7 @@
           </a>
         </li>
         <li>
-          <button type="submit" class="navigation-button">Хочу сюда</button>
+          <button type="submit" class="secondary-button">Хочу сюда</button>
         </li>
       </ul>
     </nav>
@@ -49,7 +55,7 @@
       <img class="hero-logo" src="images/welcome.png" width="456" alt="Welcome to the gorgeus Sedona.Because the Grand Canyon sucks!">
     </section>
     <section class="advantages">
-      <div class="advantages">
+      <div class="text-blok">
         <h2 class="visually-hidden"></h2>
         <p class="main-text-header">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</p>
@@ -87,23 +93,23 @@
       </div>
     </section>
     <section class="service-fields">
-      <div class="main-text-blok service-fields-header">
+      <div class="text-blok">
         <h2 class="visually-hidden"></h2>
         <p class="main-text-header">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p>Опытный персонал и качественное обслуживание!</p>
       </div>
       <ul class="service-fields">
-        <li class="service-field-light">
+        <li class="service-field advantages-field-light ">
           <img src="images/icons/Advantage-icon-1.svg" alt="Жильё">
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li class="service-field-dim">
+        <li class="service-field advantages-field-easiest">
           <img src="images/icons/Advantage-icon-2.svg" alt="Еда">
           <h3>Еда</h3>
           <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="service-field-light">
+        <li class="service-field advantages-field-light">
           <img src="images/icons/Advantage-icon-3.svg" alt="Сувениры">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и настоящего местного производства!</p>
@@ -111,19 +117,21 @@
       </ul>
     </section>
     <section class="search-hotels">
-      <div class="main-text-blok">
-        <h2 class="title-h2">Заинтересовались?</h2>
+      <div class="text-blok">
+        <h2 class="visually-hidden"></h2>
+        <p class="main-text-header">Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
-      <button type="submit" class="navigation-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+      <button type="submit" class="secondary-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     </section>
     <div class="footer-text-blok">
-      <h2 class="title-h2">Подпишитесь на рассылку</h2>
-      <p class="">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <h2 class="visually-hidden"></h2>
+      <p class="main-text-header">Подпишитесь на рассылку</p>
+      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <input type="text" name="e-mail" value="Ваш e-mail">
       </form>
-      <input class="footer-button" type="button" value="Подписаться">
+      <button type="submit" class="brand-button">Подписаться</button>
     </div>
   </main>
   <footer class="main-footer">
@@ -149,7 +157,7 @@
         </li>
       </ul>
     </nav>
-    <a class="footer-navigation-tel" href="#" class="footer-text">+7 (812) 812-12-12</a>
+    <div class=phone><a href="tel:+78128121212">+7 (812) 812-12-12</a></div>
     <a class="footer-navigation-link" href="#">
       <img src="images/icons/logo_htmlacademy.svg" alt="Сайт HTML ACADEMY">
     </a>
