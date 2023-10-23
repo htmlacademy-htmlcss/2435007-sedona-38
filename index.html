@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
@@ -12,19 +12,21 @@
 
   <body>
   <header class="main-header">
-    <a class="logo" href="index.html" aria-current="page" width="100px">
-      <img class="logo" src="images/logo.png" width="138" height="64" alt="Логотип Седона">
-    </a>
+    <div class="logo-header">
+      <a class="logo" href="index.html" aria-current="page" >
+        <img class="logo" src="images/logo.png" alt="Логотип Седона">
+      </a>
+    </div>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="main.html">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li>
-          <a class="navigation-link" href="about.html">О Седоне</a>
+          <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li>
-          <a class="navigation-link" href="Sedona hotels.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -44,31 +46,35 @@
           </a>
         </li>
         <li>
-          <button type="submit" class="secondary-button">Хочу сюда</button>
+          <button type="submit" class="button-sedona button-secondary">Хочу сюда</button>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main-index">
     <section class="hero">
-      <h1 class="visually-hidden">Sedona</h1>
-      <img class="hero-logo" src="images/welcome.png" width="456" alt="Welcome to the gorgeus Sedona.Because the Grand Canyon sucks!">
+      <div class="hero-container">
+        <h1 class="visually-hidden">Sedona</h1>
+        <img class="hero-logo" src="images/welcome.png" alt="Welcome to the gorgeus Sedona.Because the Grand Canyon sucks!">
+      </div>
     </section>
     <section class="advantages">
-      <div class="text-blok">
+      <div class="text-block">
         <h2 class="visually-hidden"></h2>
         <p class="main-text-header">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</p>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
-      <div class="advantages-fields">
-        <ul>
+      <div class="advantages-items">
+        <ul class="advantages-fields">
           <li class="advantages-field-bright">
-            <h3>Настоящий городок</h3>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <a class="advantages-img" href="#">
-              <img src="images/photo-1.jpg" color="red" width="800" alt="Настоящий городок">
-            </a>
+            <div class="advantages-container">
+              <h3>Настоящий городок</h3>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <a class="advantages-img" href="#">
+                <img src="images/photo-1.jpg" width="800" alt="Настоящий городок">
+              </a>
+            </div>
           </li>
           <li class="advantages-field-dim">
             <h3>Небольшая площадь</h3>
@@ -84,7 +90,7 @@
           </li>
           <li class="advantages-field-bright">
             <a class="advantages-img" href="#">
-              <img src="images/photo-2.jpg" color="red" width="800" alt="Там есть мост дьявола">
+              <img src="images/photo-2.jpg" width="800" alt="Там есть мост дьявола">
             </a>
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -93,7 +99,7 @@
       </div>
     </section>
     <section class="service-fields">
-      <div class="text-blok">
+      <div class="text-block">
         <h2 class="visually-hidden"></h2>
         <p class="main-text-header">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p>Опытный персонал и качественное обслуживание!</p>
@@ -117,21 +123,23 @@
       </ul>
     </section>
     <section class="search-hotels">
-      <div class="text-blok">
+      <div class="text-block">
         <h2 class="visually-hidden"></h2>
         <p class="main-text-header">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="submit" class=" button-sedona button-secondary">Поиск гостиницы в Седоне</button>
       </div>
-      <button type="submit" class="secondary-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     </section>
-    <div class="footer-text-blok">
-      <h2 class="visually-hidden"></h2>
-      <p class="main-text-header">Подпишитесь на рассылку</p>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <input type="text" name="e-mail" value="Ваш e-mail">
-      </form>
-      <button type="submit" class="brand-button">Подписаться</button>
+    <div class="footer-text-block">
+      <div class="text-block">
+        <h2 class="visually-hidden"></h2>
+        <p class="main-text-header footer-text-header">Подпишитесь на рассылку</p>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <input class="footer-subscribe" type="text" name="e-mail" value="Ваш e-mail">
+          <button type="submit" class=" button-sedona button-brand-max">Подписаться</button>
+        </form>
+      </div>
     </div>
   </main>
   <footer class="main-footer">
@@ -157,7 +165,7 @@
         </li>
       </ul>
     </nav>
-    <div class=phone><a href="tel:+78128121212">+7 (812) 812-12-12</a></div>
+    <div class="phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></div>
     <a class="footer-navigation-link" href="#">
       <img src="images/icons/logo_htmlacademy.svg" alt="Сайт HTML ACADEMY">
     </a>
