@@ -41,9 +41,10 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 26px;
   border: none;
   color: #ffffff;
+  white-space: nowrap;
 
 }
 .button-secondary {
@@ -66,6 +67,7 @@ h3 {
 }
 .button-favorite {
   background-color: #7DB54F;
+  padding: 8px 18px;
 }
 .button-favorite:hover {
    background-color: #6C9E42;
@@ -140,6 +142,7 @@ body {
 
 /*MAIN*/
 .main-index {
+  max-width: 1200px;
 
 }
 .hero-container {
@@ -178,6 +181,11 @@ p, .text-block {
 }
 .advantages-fields {
   color: #000;
+ /* display: grid;
+  !*grid-template-columns: repeat(2,140px);
+  grid-template-rows: 212px 1fr;*!
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;*/
   display: flex;
   flex-wrap: wrap;
 }
@@ -329,9 +337,12 @@ a, .phone{
   /*width: 100%;*/
 }
 .catalog-hotels-list {
-  display: flex;
+  /*display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   list-style-type: none;
   padding: 0;
 }
@@ -339,14 +350,45 @@ a, .phone{
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   padding: 20px;
-
+  display: grid;
+  grid-template-columns: repeat(2,140px);
+  grid-template-rows: 212px 1fr;
+  gap: 16px 20px;
+  align-items: center;
+}
+.catalog-hotel-link {
+  grid-column: 1 / -1;
+  text-decoration: none;
 
 }
-.catalog-button {
-  /*padding: 8px 20px;*/
-  display: flex;
-  justify-content: space-between;
-  max-width: 300px;
+.catalog-hotel-link h3 {
+  margin: 0;
 }
+.price {
+  font-size: 18px;
+  text-align: right;
+}
+.star-stars-2 {
+  background-image: url("../images/icons/star.svg");
+  width: 36px;
+  height: 17px;
+}
+.star-stars-3 {
+  background-image: url("../images/icons/star.svg");
+  width: 52px;
+  height: 17px;
+}
+.star-stars-4 {
+  background-image: url("../images/icons/star.svg");
+  width: 72px;
+  height: 17px;
+}
+.reiting {
+  background-color: #F2F2F2;
+  padding: 8px 22px;
+  font-size: 16px;
+  text-align: center;
+}
+
 
 
