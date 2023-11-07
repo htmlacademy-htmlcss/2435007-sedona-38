@@ -37,11 +37,10 @@
           </li>
           <li class="navigation-link-favorite">
             <a class="navigation-link-user" href="#">
-              <div class="navigation-favorite">
-                <p class="favorite-numbers">12</p>
-              </div>
-            </a>
+              <p class="navigation-favorite">12</p>
               <img src="images/icons/heart.svg" width="20" alt="Избранное">
+            </a>
+
           </li>
           <li>
             <button type="submit" class="button button-secondary">Хочу сюда</button>
@@ -66,11 +65,12 @@
         <p class="text-block-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
       <ul class="advantages-fields">
-        <li class="advantage advantage-wide ">
-          <div class="advantages-container advantages-field-bright">
-            <p class="title3">Настоящий городок</p>
-            <hr>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <li class="advantage advantage-wide advantages-field-bright ">
+          <div class="advantage">
+            <div class="advantages-container">
+              <p class="advantage-title3">Настоящий городок</p>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь </p>
+            </div>
           </div>
           <a class="advantage-img"  href="#">
             <img class="" src="images/photo-1.jpg" height="385" width="800"  alt="Настоящий городок">
@@ -78,34 +78,33 @@
         </li>
         <li class="advantage advantages-field-dim">
           <div class="advantages-container">
-            <p class="title3">Небольшая площадь</p>
-            <hr class="black-line">
+            <p class="advantage-title3">Небольшая площадь</p>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
         </li>
         <li class="advantage advantages-field-light">
           <div class="advantages-container">
-            <p class="title3">Красивая<br> дорога</p>
-            <hr class="black-line">
+            <p class="advantage-title3">Красивая<br> дорога</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="advantage advantages-field-dim">
           <div class="advantages-container">
-            <p class="title3">Мало <br> туристов</p>
-            <hr class="black-line">
+            <p class="advantage-title3">Мало <br> туристов</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </li>
-        <li class="advantage advantages-field-bright">
-          <a class="" href="#">
-            <img src="images/photo-2.jpg" height="385" alt="Там есть мост дьявола">
+        <li class="advantage advantage-wide advantages-field-bright">
+          <a class="advantage-img" href="#">
+            <img src="images/photo-2.jpg" height="385" alt="Там есть мост дьявола.">
           </a>
-          <div class=" advantages-container">
-            <p class="title3">Там есть мост дьявола</p>
-            <hr>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <div class="advantage">
+            <div class=" advantages-container">
+              <p class="advantage-title3">Там есть мост дьявола</p>
+              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
           </div>
+
         </li>
       </ul>
     </section>
@@ -118,21 +117,21 @@
       <ul class="service-fields">
         <li class="service advantages-field-dim">
           <div class="service-container">
-            <img src="images/icons/advantage-icon-1.svg" alt="Жильё">
+            <img src="images/icons/advantage-icon-1.svg" alt="Жильё.">
             <p class="service-description title3">Жильё</p>
             <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </div>
         </li>
         <li class="service advantages-field-light">
           <div class="service-container">
-            <img src="images/icons/advantage-icon-2.svg" alt="Еда">
+            <img src="images/icons/advantage-icon-2.svg" alt="Еда.">
             <p class="service-description title3">Еда</p>
             <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </div>
         </li>
         <li class="service advantages-field-dim">
           <div class="service-container">
-            <img src="images/icons/advantage-icon-3.svg" alt="Жильё">
+            <img src="images/icons/advantage-icon-3.svg" alt="Сувениры.">
             <p class="service-description title3">Сувениры</p>
             <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
           </div>
@@ -151,11 +150,10 @@
       <div class="text-block">
         <h2 class="visually-hidden">Подпишитесь на рассылку.Только полезная информация и никакого спама, честное бойскаутское!</h2>
         <p class="footer-text-header title2">Подпишитесь на рассылку</p>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <input class="footer-subscribe" type="text" name="e-mail" id="e-mail">
-          <label for="e-mail">Ваш e-mail</label>
-          <!--<input class="footer-subscribe" type="text" name="e-mail" value="Ваш e-mail">-->
+        <p class="text-description-footer">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="footer-form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <input class="footer-subscribe" type="text" name="e-mail" id="e-mail" placeholder="Ваш e-mail">
+          <!--<label for="e-mail">Ваш e-mail</label>-->
           <button type="submit" class=" button button-brand-max">Подписаться</button>
         </form>
       </div>
