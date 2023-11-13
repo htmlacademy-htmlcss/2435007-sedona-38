@@ -80,8 +80,8 @@
           </li>
         </ol>
         <form action="https://echo.htmlacademy.ru/" method="get">
-        <div class="filter-main">
-          <h2 class="visually-hidden">Фильтры.</h2>
+          <div class="filter-main">
+            <h2 class="visually-hidden">Фильтры.</h2>
             <div class="filter-search">
               <fieldset class="filter-search-item">
                 <legend class="filter-title3">Инфраструктура:</legend>
@@ -125,11 +125,11 @@
                   <div class="price-controls">
                     <label class="min-price">
                       <input type="text" name="min-price" value="0" required placeholder="0" aria-label="Минимальная цена">
-                      <p class="min">от</p>
+                      <span class="min">от</span>
                     </label>
                     <label class="max-price">
                       <input type="text" name="max-price" value="9000" required placeholder="9000" aria-label="Максимальная цена">
-                      <p class="max">до</p>
+                      <span class="max">до</span>
                     </label>
                   </div>
                   <div class="range-controls">
@@ -146,7 +146,7 @@
                 <button type="reset" class="button button-clear filter-button">Сбросить</button>
               </div>
             </div>
-        </div>
+          </div>
         </form>
       </div>
     </div>
@@ -156,8 +156,8 @@
           <p class="catalog-sort-col-title title2">Найдено гостиниц: 38</p>
           <div class="catalog-sort-col">
             <select class="catalog-select" name="hotels">
-              <option value="Сначала дешевые">Сначала дешевые</option>
-              <option value="Сначала дорогие">Сначала дорогие</option>
+              <option label="Сначала дешевые" value="1">Сначала дешевые</option>
+              <option label="Сначала дорогие" value="2">Сначала дорогие</option>
             </select>
             <div class="triger">
               <button type="submit" class="catalog-triger">
@@ -189,8 +189,8 @@
               </a>
               <span>Гостиница</span>
               <span class="price">От 4000 ₽</span>
-                <button type="submit" class="button button-secondary">Подробнее</button>
-                <button type="submit" class="button button-brand">В избранное</button>
+              <button type="submit" class="button button-secondary">Подробнее</button>
+              <button type="submit" class="button button-brand">В избранное</button>
               <p class="star-stars-4">
                 <span class="visually-hidden">Четырёхзвездочный отель.</span>
               </p>
@@ -274,11 +274,13 @@
             <p class="catalog-text-header title2">Подпишитесь на рассылку</p>
             <p class="text-description-footer">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="footer-form-catalog" action="https://echo.htmlacademy.ru/courses" method="post">
-              <input class="footer-subscribe-catalog" type="text" name="e-mail" id="e-mail"required placeholder="Ваш e-mail">
+              <input class="footer-subscribe-catalog" value="e-mail" type="text" name="e-mail" id="e-mail" required placeholder="Ваш e-mail">
               <button type="submit" class=" button button-brand-max">Подписаться</button>
             </form>
           </div>
         </div>
+      </section>
+    </div>
   </main>
   <footer class="main-footer catalog-main-footer container">
     <nav class="footer-navigation">
