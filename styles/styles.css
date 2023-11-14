@@ -42,12 +42,6 @@
   text-transform: uppercase;
   margin: 0;
 }
-input {
-  cursor: pointer;
-}
-select{
-  cursor: pointer;
-}
 .button {
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
@@ -151,10 +145,9 @@ body {
 }
 .main-container {
   display: flex;
-  align-items: flex-start!important;
+  align-items: flex-start;
 }
 .container {
-  align-items: center;
   max-width: 1060px;
   margin: 0 auto;
 }
@@ -484,6 +477,7 @@ body {
   justify-content: center;
   max-height: 52px;
   width: 684px;
+  cursor: pointer;
 }
 .footer-subscribe{
   color: #000000;
@@ -521,7 +515,7 @@ body {
 .main-footer {
   display: flex;
   height: 120px;
-  padding-top: 6px;
+  padding-top: 46px;
 }
 .footer-text-header {
   color: white;
@@ -544,20 +538,20 @@ body {
 .footer-navigation-link svg{
   color: #83B3D3;
 }
-.footer-navigation-link svg:hover path {
+.footer-navigation-link svg:hover {
   fill: #68A2CA;
 }
-.footer-navigation-link svg:focus path {
+.footer-navigation-link svg:focus{
   fill: #68A2CA;
 }
 .footer-navigation-link-academy{
   padding-top: 3px;
   color: #000000;
 }
-.footer-navigation-link-academy:hover path {
+.footer-navigation-link-academy:hover {
   fill: #756157;
 }
-.footer-navigation-link-academy:focus path {
+.footer-navigation-link-academy:focus {
   fill: #756157;
 }
 .phone {
@@ -576,6 +570,9 @@ body {
   color: #756157;
 }
 /*-------------------------------catalog---------------------------------------*/
+.catalog-main-index{
+  margin-bottom: 34px;
+}
 .filter {
   color: white;
   background-image: url("../images/filter.jpg");
@@ -855,8 +852,6 @@ body {
 .range-controls .toggle:focus {
   outline: 3px solid #83B3D3;
 }
-
-
 .range-controls .toggle-min {
   left: 0;
   top: 37px;
@@ -917,6 +912,7 @@ body {
   font-size: 18px;
   color: #333333;
   margin-right: 62px;
+  cursor: pointer;
 }
 .trigger {
   display: flex;
@@ -1061,7 +1057,7 @@ body {
 }
 .catalog-text {
   padding-top: 58px;
-  width: 684px!important;
+  width: 684px;
 }
 .catalog-text-header {
   color: #000000;
