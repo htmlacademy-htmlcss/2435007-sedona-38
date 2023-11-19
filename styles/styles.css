@@ -1344,22 +1344,22 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .quantity_inner label{
   margin: 0 auto;
 }
-.quantity_inner .bt_minus svg,
-.quantity_inner .bt_plus svg {
+.bt_minus svg,
+.bt_plus svg {
   color: #7561574D;
 }
-.quantity_inner .bt_minus:hover svg,
-.quantity_inner .bt_plus:hover svg {
+.bt_minus:hover svg,
+.bt_plus:hover svg {
   color: #000000;
 }
-.quantity_inner .bt_minus:focus svg,
-.quantity_inner .bt_plus:focus svg {
+.bt_minus:focus svg,
+.bt_plus:focus svg {
   color: #000000;
   border: 3px solid #82B3D3;
   border-radius: 3px;
 }
-.quantity_inner .bt_minus:active svg,
-.quantity_inner .bt_plus:active svg {
+.bt_minus:active svg,
+.bt_plus:active svg {
   color: #7561574D;
 }
 .quantity:hover {
